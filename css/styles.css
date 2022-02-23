@@ -318,7 +318,7 @@ img {
   height: 44px;
   background-color: var(--white-text-color);
   border-radius: 50%;
-  color: red;
+  color: var(--social-icon-color);
 }
 .social-icon {
   fill: currentColor;
