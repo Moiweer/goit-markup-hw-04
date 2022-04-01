@@ -154,12 +154,18 @@ img {
 
 /* hero section */
 .hero {
-  background-color: var(--bg-grey-color);
   max-width: 1600px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/Img5.jpg");
+  background-size: cover;
+  background-color: #c4c4c4;
 }
 .main-title {
   font-weight: 900;
