@@ -353,6 +353,11 @@ img {
   fill: var(--social-icon-color);
   border: 1px solid var(--social-icon-color);
 }
+.client-icon-item:hover,
+.client-icon-item:focus {
+
+fill: currentColor;
+}
 .client-icon-item:not(:last-child) {
   margin-right: 30px;
 }
