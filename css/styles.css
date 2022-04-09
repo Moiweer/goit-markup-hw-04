@@ -155,8 +155,6 @@ margin-left: auto;
   }
 .phone-icon {
   display: flex;
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
