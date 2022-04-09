@@ -77,11 +77,6 @@ img {
   display: flex;
   align-items: center;
 }
-.contacts-list {
-  display: flex;
-  margin-left: auto;
-
-}
 .navigation-link{
   padding-top: 32px;
   padding-bottom: 32px;
@@ -129,11 +124,47 @@ img {
   display: block;
 
 }
+.contact-mail {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  box-sizing: border-box;
+}
+.contact-telephon{
+  display: block;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
 .contacts-list{
 display: flex;
+align-items: center;
+margin-left: auto;
 }
-.contact-telephon-link,
-.contact-mail-link {
+.contact-telephon-link
+{
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  }
+.phone-icon {
+  display: flex;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-mail-link{
+   display: flex;
+   display: block;
+   justify-content: center;
+   align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -142,9 +173,7 @@ display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.contact-mail {
-  margin-right: 50px;
-}
+
 .contact-mail-link:hover,
 :focus {
   color: var(--accent-text-color);
