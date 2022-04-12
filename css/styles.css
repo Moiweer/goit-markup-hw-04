@@ -145,6 +145,7 @@ img {
 {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -391,12 +392,9 @@ img {
 .client-icon-link:hover,
 .client-icon-link:focus{
   color: var(--accent-hover-color);
+border: 1px solid var(--accent-hover-color);
 }
 
-.client-icon-item:hover,
-.client-icon-item:focus{
-  border: 1px solid var(--accent-hover-color);
-}
 
 .client-icon-item:not(:last-child) {
   margin-right: 30px;
@@ -491,6 +489,10 @@ a.logo.link {
 .address:focus {
   color: var(--accent-hover-color);
 }
+.footer-contact-mail-link:hover,
+.footer-contact-mail-link:focus{
+  color: var(--accent-hover-color);
+}
 .mail:focus {
   color: var(--accent-hover-color);
 }
@@ -533,7 +535,7 @@ a.logo.link {
 
 .footer-social-icon-link:hover,
 .footer-social-icon-link:focus {
-  color: var(--white-text-color);
+ 
   background-color: var(--accent-hover-color)
 }
 
@@ -582,6 +584,10 @@ background-color: var(--accent-hover-color);
 .filter-btn:focus {
   color: var(--white-text-color);
   background-color: var(--accent-hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .portfolio-filter-list {
@@ -613,16 +619,18 @@ background-color: var(--accent-hover-color);
 {
   display: block;
 }
-.portfolio-list-item:hover{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio-list-all:focus {
+.portfolio-link-img:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.portfolio-link-img:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-list-title {
   font-weight: bold;
   font-size: 18px;
@@ -646,6 +654,7 @@ background-color: var(--accent-hover-color);
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   padding: 20px 24px;
+  
 }
 .portfolio-list {
   display: flex;
